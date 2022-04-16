@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, ul {
+  margin: 0;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+.intro {
+  background-color: #00000a;
+  height: 30px;
+  position: relative;
+}
+.intro span {
+  color: white;
+  font-size: 12px;
+}
+
+.shortcut-box {
+  height: calc(100vh - 30px);
+  background-color: #00000a;
+  width: 5vw;
+  text-align: center;
+  padding-top: 20px;
+}
+.shortcut-box a {
+  color: white;
+  display: block;
+  padding: 10px auto;
+  margin: 0 0 35px 0;
+}
+.shortcut-box a i {
+  font-size: 30px;
+}
+
+.nav-section {
+  height: calc(100vh - 30px);
+  background-color: #1a1a1f;
+  width: 0;
+  transition: width 0.5s;
+}
+.nav-section p {
+  color: white;
+  background-color: #00000a;
+  padding: 5px auto;
+  font-size: 14px;
+  border-top: 1px solid rgb(31, 30, 30);
+  border-left: 1px solid rgb(31, 30, 30);
+  margin-bottom: 0;
+}
+.nav-section .pages-list {
+  margin-top: 0;
+}
+.nav-section .pages-list li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+.nav-section .pages-list li {
+  padding: 5px 20px;
+}
+.nav-section .pages-list li:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.nav-section .pages-list li a {
+  color: white;
+  font-size: 13px;
+}
+.nav-section .pages-list li a i {
+  margin-right: 8px;
+}
+
+.content-area {
+  height: auto;
+  background-color: #3e3e3f;
+  width: 95vw;
+  transition: all 0.5s;
+}
+
+@media (max-width: 586px) {
+  .shortcut-box {
+    width: 20vw;
+  }
+
+  .nav-section {
+    width: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
