@@ -34,17 +34,20 @@ a {
 .shortcut-box {
     height: calc(100vh - 30px);
     background-color: #00000a;
-    width: 5vw;
+    width: 45px;
     text-align: center;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     a {
         color: white;
         display: block;
         padding: 10px auto;
-        margin: 0 0 35px 0;
+        margin: 0 0 15px 0;
         i {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
 }
@@ -52,7 +55,7 @@ a {
 .nav-section {
     height: calc(100vh - 30px);
     background-color: #1a1a1f;
-    width: 0;
+    width: 18vw;
     transition: width 0.5s;
 
     p{
@@ -90,11 +93,18 @@ a {
     
 }
 
+.nav-section.active {
+    transform: translateX(-100%);
+}
+
 .content-area {
     height: auto;
     background-color: #3e3e3f;
-    width: 95vw;
+    width: 85vw;
     transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    color: white;
 }
 
 
