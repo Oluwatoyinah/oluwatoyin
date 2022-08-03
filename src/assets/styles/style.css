@@ -28,9 +28,6 @@ body {
   font-family: "Zilla Slab", serif;
   font-weight: 600;
 }
-.main .content {
-  padding-top: 2rem;
-}
 .main .content h2 {
   font-family: "Limelight", cursive;
   font-size: 5rem;
